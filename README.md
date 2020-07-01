@@ -13,49 +13,28 @@ The style of this page is controlled through the style.css file.
 #### script.js
 The script file runs four functions: home, about me, portfolio, and contact me. These functions run once the link in the nav bar is clicked. 
 
+#### comparison to my last portfolio
+This portfolio compared to my first in hw2 is much more elevated aesthically and technically. The hw2 used three html documents and no script file whereas in portfolio updated I used only 1 html page and utilized DOM manipulation with javascript and jquery to dynamically create pages. 
+
 
 ## Images of Completed Website 
 
 ### Step 1
 
-![step 1](assets/readme_images/img1.png)
+![home](assets/images/home.png)
 
 ### Step 2
 
-![step 2](assets/readme_images/img2.png)
+![about me](assets/images/aboutme.png)
 
-### Step 3
+### Step 3x
 
-![step 3](assets/readme_images/img3.png)
-
-### Step 4
-
-![step 4](assets/readme_images/img4.png)
-
-### Step 5
-
-![step 5](assets/readme_images/img5.png)
-
-### Step 6
-
-![step 5](assets/readme_images/img6.png)
-
-### Step 7
-
-![step 5](assets/readme_images/img7.png)
-
-### Step 8
-
-![step 5](assets/readme_images/img8.png)
-
-### Step 9
-
-![step 5](assets/readme_images/img9.png)
+![portfolio](assets/images/portfolio.png)
 
 
 ## Link to Site
 
-Deployed website [drinkMe](https://derek-watson14.github.io/drinkME/)
+Deployed website [nicole](https://nicoleremy95.github.io/portfolio_updated/)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
