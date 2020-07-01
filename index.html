@@ -7,50 +7,64 @@
     <!-- favicon link-->
     <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/50/000000/circled-n.png" type="image/x-icon">
     <!-- reset css link  -->
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="assets/reset.css">
     <!-- materialize link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- style css link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <!-- font awesome link  -->
     <script src="https://kit.fontawesome.com/0f2d963ed1.js" crossorigin="anonymous"></script>    
 </head>
 <!-- body -->
 <body>
     <!-- container header -->
-    <header class="container">
-        <!-- row 1 header -->
-        <div class="row">
-            <!-- column 1 nav bar -->
-            <div class="col-md-6 pl-0 pr-0">
-                <nav class="navbar navbar-dark bg-dark">
-                <span class="navbar-brand mb-0 h1 custom-logo">nicole</span>
-                </nav>
+    <div class="navbar-fixed" id="home">
+        <nav>
+            <div class="nav-wrapper grey darken-4">
+            <a href="#home" class="brand-logo">nicole</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a class = "about-me">about me</a></li>
+                <li><a class= "portfolio">portfolio</a></li>
+                <li><a class= "contact-me">contact me</a></li>
+            </ul>
             </div>
-             <!-- column 2 links -->
-            <div class="col-md-2 col-sm-4 col-4">
-                <h1 class="text-center"><a href="index.html">about</a></h1>
-            </div>
-            <div class="col-md-2 col-sm-4 col-4">
-                <h1 class="text-center"><a href="portfolio.html">portfolio</a></h1>
-            </div>
-            <div class="col-md-2 col-sm-4 col-4">
-                <h1 class="text-center"><a href="contact.html">contact</a></h1>
-            </div>
-        </div>
-    </header>
+        </nav> 
+    </div> 
+    <!-- carousel  -->
+    <section class="container-flex">
+        <div class="carousel carousel-slider noautoinit col s12">
+            <!-- img 1 -->
+            <div class="carousel-item">
+                <div class="container img-container" id="img1"></div> 
+            </div>   
+            <!-- img 2 -->
+            <div class="carousel-item">
+                <div class="container img-container" id="img2"></div> 
+            </div>    
+            <!-- img 3 -->
+            <div class="carousel-item">
+                <div class="container img-container" id="img3"></div> 
+            </div>    
+        </div>  
+    </section>
+        
     <section class="container">
         <div class="row">
             <div class="col s12 l12 page-header"></div>
         </div>
-    </section>
-    <section class="container">
         <div class="row">
-            <div class=""></div>
+            <div class="col s12 l12 content-section"></div>
         </div>
     </section>
-    <!-- jquery -->
+
+    <!-- jquery js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- Database Logic -->
+    <!-- materialize js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- display logic js -->
+    <script src="assets/display.js"></script>
+    <!-- Database Logic js -->
+    <script src="assets/script.js"></script>
     
 </body>
+</html>
