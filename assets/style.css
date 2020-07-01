@@ -72,9 +72,17 @@ a:hover {
 
 /* portfolio */
 .portfolio-cards{
-    height: 200px;
+    height: 400px;
     cursor: pointer;
-  }
+}
+.card-image{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+
+
+
 .custom-logo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: x-large;

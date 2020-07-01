@@ -56,37 +56,37 @@ function portfolio(){
         {
             "name": "drinkME",
             "info": "In the mood for a cocktail or a beer? try this application for recipies and breweries near you.",
-            "image": "assets/images/rsz_1screen_shot_2020-06-09_at_25837_pm.png",
+            "image": "assets/images/drinkme.png",
             "website": "https://derek-watson14.github.io/drinkME/"
         },
         {
             "name": "weather dashboard",
             "info": "Look up current weather for a city using this app",
-            "image": "assets/images/rsz_1screen_shot_2020-06-09_at_25837_pm.png",
+            "image": "assets/images/hw6.png",
             "website": "https://nicoleremy95.github.io/hw6_server_side_apis_weather/5"
         },
         {
             "name": "calendar",
             "info": "Schedule important events in your day to day.",
-            "image": "assets/images/rsz_1screen_shot_2020-06-09_at_25837_pm.png",
+            "image": "assets/images/hw5.png",
             "website": "https://nicoleremy95.github.io/hw5_calendar_schedule_NEW//"
         },
         {
             "name": "coding assesment",
             "info": "Test your coding knowledge with this assesment.",
-            "image": "assets/images/rsz_1screen_shot_2020-06-09_at_25837_pm.png",
+            "image": "assets/images/hw4.png",
             "website": "https://nicoleremy95.github.io/hw4_coding_assesment/"
         },
         {
             "name": "password generator",
             "info": "Need a new password? Use this application do generate a random password.",
-            "image": "assets/images/rsz_1screen_shot_2020-06-09_at_25837_pm.png",
+            "image": "assets/images/hw3.png",
             "website": "https://nicoleremy95.github.io/hw3_passwordgenerator/"
         },
         {
             "name": "refractor code",
             "info": "check out my refractored code here",
-            "image": "assets/images/rsz_1screen_shot_2020-06-09_at_25837_pm.png",
+            "image": "assets/images/hw1.png",
             "website": "https://github.com/nicoleremy95/hw1_coderefractor"
         }
     ];
@@ -94,6 +94,7 @@ function portfolio(){
 
     portfolioContent.forEach(function(item){
         var cardContent = $("<div class= 'card-content'>")
+        var cardTitle = $("<div class = 'card-title'>")
         var cardAction = $("<a class = 'card-action'>")
         var cardStacked = $("<div class = 'card-stacked'>")
         var cardImage = $("<div class = 'card-image'>")
@@ -101,8 +102,10 @@ function portfolio(){
 
         objName = item.name
         console.log(item.name)
+        
         objInfo = item.info
         console.log(item.info)
+        
         objImage = item.image
         console.log(item.image)
         var image =$("<img>").attr("src", objImage)
@@ -110,9 +113,9 @@ function portfolio(){
         objWebsite = item.website
         console.log(item.website)
         
-
+        cardTitle.append(objName)
         cardAction.append(objWebsite)
-        cardContent.append(objName, objInfo)
+        cardContent.append(cardTitle, objInfo)
         cardStacked.append(cardContent, cardAction)
         cardImage.append(image)
         
