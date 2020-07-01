@@ -1,34 +1,34 @@
 var content = $(".content")
 
-function home(){
-    var homeSection = $("<div>")
-    var homeCard = $("<div class = 'card teal lighten-3'>")
-    var homeCardContent = $("<div class = 'card-content white-text'>")
-    var homeCardTitle = $("<span class = 'card-title'>")
-    var homeCardAction1 = $("<a class = 'card-action about-me'>")
-    var homeCardAction2 = $("<a class = 'card-action portfolio'>")
-    var homeCardAction3 = $("<a class = 'card-action contact-me'>")
+// function home(){
+//     var homeSection = $("<div>")
+//     var homeCard = $("<div class = 'card teal lighten-3'>")
+//     var homeCardContent = $("<div class = 'card-content white-text'>")
+//     var homeCardTitle = $("<span class = 'card-title'>")
+//     var homeCardAction1 = $("<a class = 'card-action about-me'>")
+//     var homeCardAction2 = $("<a class = 'card-action portfolio'>")
+//     var homeCardAction3 = $("<a class = 'card-action contact-me'>")
    
-    var homeCardText = $("<p>")
+//     var homeCardText = $("<p>")
 
-    homeCardTitle.text("nicole")
-    homeCardText.text("click the links below to see more about me")
-    homeCardTitle.append(homeCardText)
+//     homeCardTitle.text("nicole")
+//     homeCardText.text("click the links below to see more about me")
+//     homeCardTitle.append(homeCardText)
 
-    homeCardAction1.text("about me")
-    // homeCardAction1.addClass("about-me")
-    homeCardAction2.text("portfolio")
-    // homeCardAction2.addClass("portfolio")
-    homeCardAction3.text("contact me")
-    // homeCardAction3.addClass("contact-me")
+//     homeCardAction1.text("about me")
+//     // homeCardAction1.addClass("about-me")
+//     homeCardAction2.text("portfolio")
+//     // homeCardAction2.addClass("portfolio")
+//     homeCardAction3.text("contact me")
+//     // homeCardAction3.addClass("contact-me")
     
 
-    homeCardContent.append(homeCardTitle)
-    homeCard.append(homeCardContent, homeCardAction1, homeCardAction2, homeCardAction3)
+//     homeCardContent.append(homeCardTitle)
+//     homeCard.append(homeCardContent, homeCardAction1, homeCardAction2, homeCardAction3)
 
-    homeSection.append(homeCard)
-    content.html(homeSection)
-}
+//     homeSection.append(homeCard)
+//     content.html(homeSection)
+// }
 
 function aboutMe(){
     var aboutMeSection = $("<div>")
