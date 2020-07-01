@@ -1,6 +1,12 @@
 var content = $(".content")
 
-
+function home(){
+    var homeSection = $("<div>")
+    var homeCard = $("<div class = 'card'>")
+    var homeCardTitle = $("<div class = 'card-title'>")
+    var homeCardAction = $("<a card-action>")
+}
+home();
 function aboutMe(){
     var aboutMeSection = $("<div>")
     
@@ -17,6 +23,7 @@ function aboutMe(){
     
 }
 function portfolio(){
+    var portfolioDiv =$("<div>")
     var portfolioSection = $("<div>")
 
     var portfolioHeader = $("<h1>")
@@ -64,7 +71,7 @@ function portfolio(){
 
     portfolioContent.forEach(function(item){
         var cardContent = $("<div class= 'card-content'>")
-        var cardAction = $("<div class = 'card-action'>")
+        var cardAction = $("<a class = 'card-action'>")
         var cardStacked = $("<div class = 'card-stacked'>")
         var cardImage = $("<div class = 'card-image'>")
         var cardHorizontal = $("<div class = 'card horizontal portfolio-cards col s12 l4'>")
@@ -87,13 +94,20 @@ function portfolio(){
         portfolioSection.append(cardHorizontal)
     })
     
-    content.append(portfolioHeader, portfolioSection)
+    portfolioDiv.append(portfolioHeader, portfolioSection)
+    content.html(portfolioDiv)
 }
+
 function contactMe(){
   
     
 }
 
+$(".home").click(function(event){
+    event.preventDefault();
+    home();
+    console.log("you clicked home")
+})
 
 $(".about-me").click(function(event){
     event.preventDefault();
