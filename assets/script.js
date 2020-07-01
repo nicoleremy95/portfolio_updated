@@ -122,8 +122,46 @@ function portfolio(){
 }
 
 function contactMe(){
-  var contactMeSection = $("<div>")
+  var contactMeSection = $("<form class = 'col s12'>")
   
+  var row1 = $("<div class = 'row'>")
+  var row2 = $("<div class = 'row'>")
+  var row3 = $("<div class = 'row'>")
+
+  var firstName = $("<div class = 'input-field col s6'>")
+  var lastName = $("<div class = 'input-field col s6'>")
+  var email = $("<div class = 'input-field col s12'>")
+  var message = $("<div class = 'input-field col 12'>")
+
+  var firstNameInput = $("<input placeholder='jane' type = 'text' class = 'validate' id = 'first_name'>")
+  var firstNameLabel = $("<label for='first_name'>")
+  firstNameLabel.text("first name")
+
+  var lastNameInput = $("<input placeholder='smith' type = 'text' class = 'validate' id = 'last_name'>")
+  var lastNameLabel = $("<label for='last_name'>")
+  lastNameLabel.text("last name")
+
+  var emailInput = $("<input placeholder='jane@doe.com' type = 'email' class = 'validate' id = 'email'>")
+  var emailLabel = $("<label for='email'>")
+  emailLabel.text("email")
+
+  var messageInput = $("<input placeholder='hi there!' type = 'text' class = 'validate' id = 'message'>")
+  var messageLabel = $("<label for='message'>")
+  messageLabel.text("message")
+
+  firstName.append(firstNameInput, firstNameLabel)
+  lastName.append(lastNameInput, lastNameLabel )
+  email.append(emailInput, emailLabel)
+  message.append(messageInput, messageLabel)
+
+  row1.append(firstName, lastName)
+  row2.append(email)
+  row3.append(message)
+
+  contactMeSection.append(row1, row2, row3)
+  content.html(contactMeSection)
+
+
     
 }
 
