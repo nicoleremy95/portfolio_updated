@@ -4,29 +4,7 @@ function home(){
     var homeSection = $("<div>")
     var homeSectionTitle =$("<h1>")
     var homeSectionContent =$("<h2>")
-//     var homeCard = $("<div class = 'card teal lighten-3'>")
-//     var homeCardContent = $("<div class = 'card-content white-text'>")
-//     var homeCardTitle = $("<span class = 'card-title'>")
-//     var homeCardAction1 = $("<a class = 'card-action about-me'>")
-//     var homeCardAction2 = $("<a class = 'card-action portfolio'>")
-//     var homeCardAction3 = $("<a class = 'card-action contact-me'>")
-   
-//     var homeCardText = $("<p>")
 
-//     homeCardTitle.text("nicole")
-//     homeCardText.text("click the links below to see more about me")
-//     homeCardTitle.append(homeCardText)
-
-//     homeCardAction1.text("about me")
-//     // homeCardAction1.addClass("about-me")
-//     homeCardAction2.text("portfolio")
-//     // homeCardAction2.addClass("portfolio")
-//     homeCardAction3.text("contact me")
-//     // homeCardAction3.addClass("contact-me")
-    
-
-//     homeCardContent.append(homeCardTitle)
-//     homeCard.append(homeCardContent, homeCardAction1, homeCardAction2, homeCardAction3)
     homeSectionTitle.text ("welcome to my website")
     homeSectionContent.text("click on any of the buttons above or in the nav bar to learn more about me")
 
@@ -41,8 +19,8 @@ function aboutMe(){
     var aboutMeHeader = $("<h1>")
     aboutMeHeader.text("about me")
 
-    var aboutMeContent = $("<h2>")
-    aboutMeContent.text("Welcome to the website that tells you all about me. My name is Nicole, I am a Washingtonian, and I love music. I graduated from the University of Southern California in 2018 with a degree in GeoDesign. From there, I worked as an Architecture Associate for two years while dancing professionally in the NFL. Currently, I am studying to become a web developer. During my free time, you can find me enjoying long walks, reading, or drinking coffee while watching the sunrise. I am also an avid Netflix binger; my most recent of which is 'Riverdale'.")
+    var aboutMeContent = $("<p>")
+    aboutMeContent.text("Full-stack web developer hoping to utilize a background in Architecture and Interior Design to create a more aesthetically pleasing design and user experience on the web. Worked with project managers to manage client relationships, projects, timelines, budgets, and customer satisfaction during time as an Architecture Associate. Recently graduated from University of Washington with a certificate in Full Stack Development. Previously graduated from the University of Southern California with a Bachelor of Science in GeoDesign. Comfortable working with HTML, CSS, responsive design, JavaScript, jQuery, and local storage. Excellent working with Github for deployment and collaboration, and API, JSON, and AJAX for API interaction. Developing skills in Node.js. Active problem solver with a passion for user experience and project management. Successfully worked with a team as a project manager to create an application that allows users to find cocktail recipes, information on beer, and local grocery stores and breweries - this application illustrates a sleek user experience with mobile responsiveness from Materialize and DOM manipulation from JavaScript. I believe I will be an asset to any team to create more efficient, user friendly applications, within timelines and budget.")
     console.log(aboutMeContent)
     
     aboutMeSection.append(aboutMeHeader, aboutMeContent)
@@ -135,6 +113,8 @@ function portfolio(){
 
 function contactMe(){
   var contactMeSection = $("<form class = 'col s12'>")
+  var contactMeHeader = $("<h1>")
+    contactMeHeader.text("contact me")
   
   var row1 = $("<div class = 'row'>")
   var row2 = $("<div class = 'row'>")
@@ -175,7 +155,7 @@ function contactMe(){
   row3.append(message)
   row4.append(button)
 
-  contactMeSection.append(row1, row2, row3, row4)
+  contactMeSection.append(contactMeHeader, row1, row2, row3, row4)
   content.html(contactMeSection)  
 }
 

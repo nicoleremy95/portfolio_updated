@@ -13,33 +13,16 @@ h2 {
     display: flex;
     justify-content: left;
     padding-bottom: 20px;
+    font-size: 30px;
+}
+
+h3{
     font-size: 20px;
-}
-
-h3 {
-    font-size: 20%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-h4{
-    justify-content: left;
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-h5 {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    padding: 20px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    color: slategray;
 }
 
 p{
-    font-size: 15px;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 a {
     color: slategray;
@@ -53,6 +36,10 @@ a:hover {
 .img-container {
     height: 100%;
     padding: 35px 0 0 30px;
+}
+.carousel {
+    justify-content: center;
+    padding: 20px;
 }
 #img1 {
     background-image: url("../assets/images/floor.jpeg") !important ;
@@ -70,6 +57,7 @@ a:hover {
     background-color: #b2dfdb;
 }
 
+
 /* portfolio */
 .portfolio-cards{
     height: 400px;
@@ -80,66 +68,18 @@ a:hover {
     max-height: 400px;
 }
 
-
-
-
-/* .custom-logo {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: x-large;
-    justify-content: center;
-} */
-
-/* .gray-box {
-    background-color: white;
-    padding: 40px;
-    margin-top: 50px;
-    border: gray;
-    border-width: 10px;
-    border-style: solid;  
-} */
-
-/* .white-box {
-    border: white;
-    padding: 5%;
-    border-style: solid;
-    border-width: 20px;
-    margin: 10px;
-} */
-
-/* .img-fluid {
-    float: right;
-    padding: 10px;
-} */
-
-/* .text {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: slategray;
-    font-size: 20px;
-    padding-right: 20px;
-    text-align: justify;   
-} */
-
-.carousel {
-    justify-content: center;
-    padding: 20px;
-}
-
 .card-title {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
 }
 
-/* .card-text {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: slategray;
-    font-size: 20px;   
-} */
 
-.font-awesome {
-    display: flex;
-    justify-content: center;
-    color: black
-}
+
+
+
+
+
+
 
 
 
