@@ -5,9 +5,9 @@ function home(){
     var homeCard = $("<div class = 'card teal lighten-3'>")
     var homeCardContent = $("<div class = 'card-content white-text'>")
     var homeCardTitle = $("<span class = 'card-title'>")
-    var homeCardAction1 = $("<a class = 'card-action'>")
-    var homeCardAction2 = $("<a class = 'card-action'>")
-    var homeCardAction3 = $("<a class = 'card-action'>")
+    var homeCardAction1 = $("<a class = 'card-action about-me'>")
+    var homeCardAction2 = $("<a class = 'card-action portfolio'>")
+    var homeCardAction3 = $("<a class = 'card-action contact-me'>")
    
     var homeCardText = $("<p>")
 
@@ -16,11 +16,11 @@ function home(){
     homeCardTitle.append(homeCardText)
 
     homeCardAction1.text("about me")
-    homeCardAction1.addClass("about-me")
+    // homeCardAction1.addClass("about-me")
     homeCardAction2.text("portfolio")
-    homeCardAction2.addClass("portfolio")
+    // homeCardAction2.addClass("portfolio")
     homeCardAction3.text("contact me")
-    homeCardAction3.addClass("contact-me")
+    // homeCardAction3.addClass("contact-me")
     
 
     homeCardContent.append(homeCardTitle)
@@ -159,10 +159,7 @@ function contactMe(){
   row3.append(message)
 
   contactMeSection.append(row1, row2, row3)
-  content.html(contactMeSection)
-
-
-    
+  content.html(contactMeSection)  
 }
 
 $(".home").click(function(event){
