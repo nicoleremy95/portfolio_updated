@@ -125,7 +125,7 @@ function contactMe(){
   var lastName = $("<div class = 'input-field col s6'>")
   var email = $("<div class = 'input-field col s12'>")
   var message = $("<div class = 'input-field col 12'>")
-  var button =$("<button class =' btn waves-effect waves light submit' type = 'submit' name = 'action'>")
+  var button =$("<button class =' btn waves-effect waves light submit' type = 'submit' name = 'action' id = 'submit'>")
 
   var firstNameInput = $("<input placeholder='jane' type = 'text' class = 'validate' id = 'first_name'>")
   var firstNameLabel = $("<label for='first_name'>")
@@ -190,7 +190,8 @@ $(".contact-me").click(function(event){
     console.log("you clicked contact me")
 })
 
-$(".submit").click(function(event){
+$("#submit").click(function(event){
     event.preventDefault();
     submit();
+    console.log("thanks!")
 })
