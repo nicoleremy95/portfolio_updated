@@ -1,0 +1,1 @@
+var pageHeader = $(".page-header")
