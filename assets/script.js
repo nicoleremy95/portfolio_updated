@@ -1,7 +1,9 @@
 var content = $(".content")
 
-// function home(){
-//     var homeSection = $("<div>")
+function home(){
+    var homeSection = $("<div>")
+    var homeSectionTitle =$("<h1>")
+    var homeSectionContent =$("<h2>")
 //     var homeCard = $("<div class = 'card teal lighten-3'>")
 //     var homeCardContent = $("<div class = 'card-content white-text'>")
 //     var homeCardTitle = $("<span class = 'card-title'>")
@@ -25,10 +27,13 @@ var content = $(".content")
 
 //     homeCardContent.append(homeCardTitle)
 //     homeCard.append(homeCardContent, homeCardAction1, homeCardAction2, homeCardAction3)
+    homeSectionTitle.text ("welcome to my website")
+    homeSectionContent.text("click on any of the buttons above or in the nav bar to learn more about me")
 
-//     homeSection.append(homeCard)
-//     content.html(homeSection)
-// }
+    homeSection.append(homeSectionTitle, homeSectionContent)
+    content.html(homeSection)
+}
+home();
 
 function aboutMe(){
     var aboutMeSection = $("<div>")

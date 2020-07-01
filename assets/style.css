@@ -83,41 +83,41 @@ a:hover {
 
 
 
-.custom-logo {
+/* .custom-logo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: x-large;
     justify-content: center;
-}
+} */
 
-.gray-box {
+/* .gray-box {
     background-color: white;
     padding: 40px;
     margin-top: 50px;
     border: gray;
     border-width: 10px;
     border-style: solid;  
-}
+} */
 
-.white-box {
+/* .white-box {
     border: white;
     padding: 5%;
     border-style: solid;
     border-width: 20px;
     margin: 10px;
-}
+} */
 
-.img-fluid {
+/* .img-fluid {
     float: right;
     padding: 10px;
-}
+} */
 
-.text {
+/* .text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: slategray;
     font-size: 20px;
     padding-right: 20px;
     text-align: justify;   
-}
+} */
 
 .carousel {
     justify-content: center;
@@ -129,11 +129,11 @@ a:hover {
     font-size: 20px;
 }
 
-.cart-text {
+/* .card-text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: slategray;
     font-size: 20px;   
-}
+} */
 
 .font-awesome {
     display: flex;
