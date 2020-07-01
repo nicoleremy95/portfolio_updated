@@ -105,13 +105,17 @@ function portfolio(){
         console.log(item.info)
         objImage = item.image
         console.log(item.image)
+        var image =$("<img>").attr("src", objImage)
+        
         objWebsite = item.website
         console.log(item.website)
+        
 
         cardAction.append(objWebsite)
         cardContent.append(objName, objInfo)
         cardStacked.append(cardContent, cardAction)
-        cardImage.append(objImage)
+        cardImage.append(image)
+        
 
         cardHorizontal.append(cardImage, cardStacked)
         portfolioSection.append(cardHorizontal)
@@ -127,11 +131,13 @@ function contactMe(){
   var row1 = $("<div class = 'row'>")
   var row2 = $("<div class = 'row'>")
   var row3 = $("<div class = 'row'>")
+  var row4 = $("<div class = 'row'>")
 
   var firstName = $("<div class = 'input-field col s6'>")
   var lastName = $("<div class = 'input-field col s6'>")
   var email = $("<div class = 'input-field col s12'>")
   var message = $("<div class = 'input-field col 12'>")
+  var button =$("<button class =' btn waves-effect waves light submit' type = 'submit' name = 'action'>")
 
   var firstNameInput = $("<input placeholder='jane' type = 'text' class = 'validate' id = 'first_name'>")
   var firstNameLabel = $("<label for='first_name'>")
@@ -149,6 +155,8 @@ function contactMe(){
   var messageLabel = $("<label for='message'>")
   messageLabel.text("message")
 
+  button.text("submit")
+
   firstName.append(firstNameInput, firstNameLabel)
   lastName.append(lastNameInput, lastNameLabel )
   email.append(emailInput, emailLabel)
@@ -157,9 +165,17 @@ function contactMe(){
   row1.append(firstName, lastName)
   row2.append(email)
   row3.append(message)
+  row4.append(button)
 
-  contactMeSection.append(row1, row2, row3)
+  contactMeSection.append(row1, row2, row3, row4)
   content.html(contactMeSection)  
+}
+
+function submit(){
+    var textSubmit = $("<h2>")
+    textSubmit.text("thanks for submitting!")
+
+    content.append(textSubmit)
 }
 
 $(".home").click(function(event){
@@ -184,4 +200,9 @@ $(".contact-me").click(function(event){
     event.preventDefault();
     contactMe();
     console.log("you clicked contact me")
+})
+
+$(".submit").click(function(event){
+    event.preventDefault();
+    submit();
 })
