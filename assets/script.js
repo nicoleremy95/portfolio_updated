@@ -122,6 +122,7 @@ function portfolio(){
 }
 
 function contactMe(){
+  var contactMeSection = $("<div>")
   
     
 }
