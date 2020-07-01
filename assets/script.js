@@ -41,27 +41,30 @@ function portfolio(){
     console.log(portfolioContent)
 
     portfolioContent.forEach(function(item){
-        var cardContent = $("<div class= 'card-content'>")
-        var cardAction = $("<div class = 'card-action'>")
-        var cardStacked = $("<div class = 'card-stacked'>")
-        var cardImage = $("<div class = 'card-image'>")
-        var cardHorizontal = $("<div class = 'card horizontal'>")
+        // var cardContent = $("<div class= 'card-content'>")
+        // var cardAction = $("<div class = 'card-action'>")
+        // var cardStacked = $("<div class = 'card-stacked'>")
+        // var cardImage = $("<div class = 'card-image'>")
+        // var cardHorizontal = $("<div class = 'card horizontal'>")
 
-        objName = portfolioContent[item].name
-        console.log(portfolioContent[item].name)
-        objInfo = portfolioContent[item].info
-        objImage = portfolioContent[item].image
-        objWebsite = portfolioContent[item].website
+        objName = item.name
+        console.log(item.name)
+        objInfo = item.info
+        console.log(item.info)
+        objImage = item.image
+        console.log(item.image)
+        objWebsite = item.website
+        console.log(item.website)
 
-        cardAction.append(objName)
-        cardContent.append(objInfo)
-        cardStacked.append(cardContent, cardAction)
-        cardImage.append(objImage)
+        // cardAction.append(objName)
+        // cardContent.append(objInfo)
+        // cardStacked.append(cardContent, cardAction)
+        // cardImage.append(objImage)
 
-        cardHorizontal.append(cardImage, cardStacked)
-        portfolioSection.append(cardHorizontal)
+        // cardHorizontal.append(cardImage, cardStacked)
+        // portfolioSection.append(cardHorizontal)
     })
-    content.append(portfolioHeader, portfolioSection)
+    // content.append(portfolioHeader, portfolioSection)
 }
 function contactMe(){
   
