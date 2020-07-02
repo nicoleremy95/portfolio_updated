@@ -5,8 +5,8 @@ function home(){
     var homeSectionTitle =$("<h1>")
     var homeSectionContent =$("<h2>")
 
-    homeSectionTitle.text ("welcome to my website")
-    homeSectionContent.text("click on any of the buttons above or in the nav bar to learn more about me")
+    homeSectionTitle.text ("nicole")
+    homeSectionContent.text("click on the buttons to learn more about me!")
 
     homeSection.append(homeSectionTitle, homeSectionContent)
     content.html(homeSection)
@@ -81,7 +81,7 @@ function portfolio(){
         var cardAction = $("<a class = 'card-action'>")
         var cardStacked = $("<div class = 'card-stacked'>")
         var cardImage = $("<div class = 'card-image'>")
-        var cardHorizontal = $("<div class = 'card horizontal portfolio-cards col s12 l4'>")
+        var cardHorizontal = $("<div class = 'card horizontal portfolio-cards col s12 l12'>")
 
         objName = item.name
         console.log(item.name)
@@ -143,6 +143,7 @@ function contactMe(){
   var messageLabel = $("<label for='message'>")
   messageLabel.text("message")
 
+  
   button.text("submit")
 
   firstName.append(firstNameInput, firstNameLabel)
