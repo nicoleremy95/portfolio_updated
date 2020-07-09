@@ -37,6 +37,12 @@ function portfolio(){
    
     var portfolioContent = [
         {
+            "name": "employee profiles",
+            "info": "This CLI creates a website with employee information. Run the program in terminal with node app.js and make sure to install inquirer",
+            "image": "assets/images/employee_profiles.png",
+            "website": "https://github.com/nicoleremy95/template_engine_employee_summary"
+        },
+        {
             "name": "drinkME",
             "info": "In the mood for a cocktail or a beer? try this application for recipies and breweries near you.",
             "image": "assets/images/drinkme.png",
@@ -72,6 +78,7 @@ function portfolio(){
             "image": "assets/images/hw1.png",
             "website": "https://github.com/nicoleremy95/hw1_coderefractor"
         }
+        
     ];
     console.log(portfolioContent)
 
@@ -94,10 +101,12 @@ function portfolio(){
         var image =$("<img>").attr("src", objImage)
         
         objWebsite = item.website
+
         console.log(item.website)
         
         cardTitle.append(objName)
         cardAction.append(objWebsite)
+        cardAction.attr("href", objWebsite)
         cardContent.append(cardTitle, objInfo)
         cardStacked.append(cardContent, cardAction)
         cardImage.append(image)
