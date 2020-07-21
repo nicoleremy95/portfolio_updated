@@ -37,6 +37,12 @@ function portfolio(){
    
     var portfolioContent = [
         {
+            "name": "eat da burger",
+            "info": "This application creates a burger logger using MySQL, Node, Express, Express Handlebars, ORM, and an MVC design pattern. You can create a burger, decided if you want to eat it right away or wait, and then once it is logged you can choose to eat it, recreate it, or delete it. This application has full CRUD functionality. This application is deployed to Heroku.",
+            "image": "assets/images/burger.png",
+            "website": "https://ner-burger.herokuapp.com"
+        },
+        {
             "name": "employee profiles",
             "info": "This CLI creates a website with employee information. Run the program in terminal with node app.js and make sure to install inquirer",
             "image": "assets/images/employee_profiles.png",
