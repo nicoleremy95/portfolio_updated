@@ -22,8 +22,11 @@ function aboutMe(){
     var aboutMeContent = $("<p>")
     aboutMeContent.text("Full-stack web developer hoping to utilize a background in Architecture and Interior Design to create a more aesthetically pleasing design and user experience on the web. Worked with project managers to manage client relationships, projects, timelines, budgets, and customer satisfaction during time as an Architecture Associate. Recently graduated from University of Washington with a certificate in Full Stack Development. Previously graduated from the University of Southern California with a Bachelor of Science in GeoDesign. Comfortable working with HTML, CSS, responsive design, JavaScript, jQuery, and local storage. Excellent working with Github for deployment and collaboration, and API, JSON, and AJAX for API interaction. Developing skills in Node.js. Active problem solver with a passion for user experience and project management. Successfully worked with a team as a project manager to create an application that allows users to find cocktail recipes, information on beer, and local grocery stores and breweries - this application illustrates a sleek user experience with mobile responsiveness from Materialize and DOM manipulation from JavaScript. I believe I will be an asset to any team to create more efficient, user friendly applications, within timelines and budget.")
     console.log(aboutMeContent)
-    
-    aboutMeSection.append(aboutMeHeader, aboutMeContent)
+
+    var aboutMeResume = $("<img>")
+    aboutMeResume.attr("src", "assets/images/Resume Templates _ Nicole Remy.jpg")
+
+    aboutMeSection.append(aboutMeHeader, aboutMeContent, aboutMeResume)
     content.html(aboutMeSection)
     console.log(content)
     
@@ -36,6 +39,12 @@ function portfolio(){
     portfolioHeader.text("portfolio")
    
     var portfolioContent = [
+        {
+            "name": "PawsLife",
+            "info": "This application is a social community website of pet owners and pet service providers. Pawslife gives the user the ability to create an account as a pet owner of a dog or cat, and or a pet provider for dogs or cats. As an owner, a user can keep track of all of their pets for which they can book provider services. As a provider, a user can post pet care services for other members of pawslife to book.  Upon coming to our page, the user can view the main homepage which includes current pet service listings. The user can click on the cat or dog option to view pet services near them that they can book on our map. When the user clicks on the pins in the map, it shows the name of the booking. This application has full CRUD for user accounts and CRD for pets and posts and it uses authentication for sign in/create an account/logout.",
+            "image": "assets/images/pawslife.png",
+            "website": "https://pawslife.herokuapp.com/"
+        },
         {
             "name": "eat da burger",
             "info": "This application creates a burger logger using MySQL, Node, Express, Express Handlebars, ORM, and an MVC design pattern. You can create a burger, decided if you want to eat it right away or wait, and then once it is logged you can choose to eat it, recreate it, or delete it. This application has full CRUD functionality. This application is deployed to Heroku.",
