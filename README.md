@@ -19,15 +19,15 @@ This portfolio compared to my first in hw2 is much more elevated aesthically and
 
 ## Images of Completed Website 
 
-### Step 1
+### home
 
 ![home](assets/images/home.png)
 
-### Step 2
+### about me
 
 ![about me](assets/images/aboutme.png)
 
-### Step 3x
+### portfolio
 
 ![portfolio](assets/images/portfolio.png)
 
